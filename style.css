@@ -1,16 +1,22 @@
 body,
 html,
 * {
-    font-size: 20px;
     box-sizing: border-box;
     margin: 20;
     padding: 0;
+}
+.h1{
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Lora', serif; 
 }
 .container{
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 .card{
