@@ -5,11 +5,22 @@ html,
     margin: 20;
     padding: 0;
 }
-.h1{
+.header{
     font-size: 100px;
     text-align: center;
     font-family: 'Croissant One', cursive;
     font-family: 'Lora', serif; 
+    top: 20px;
+    left: 0;
+    animation: slide 10s linear infinite alternate;
+}
+.container2{
+    transform: transform .3s ease-in-out;
+    transition: 2s;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    position: relative;
 }
 .container{
     display: flex;
@@ -18,7 +29,6 @@ html,
     justify-content: space-around;
     font-size: 20px;
 }
-
 .card{
     height: 500px;
     width: 20%;
@@ -27,9 +37,10 @@ html,
     box-shadow: 10px 10px 5px #944161;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 3;
+    flex-grow: 0;
     flex-shrink: 0;
     align-items: center;
+    align-self: center;
     justify-content: space-around;
     font-family: 'Croissant One', cursive;
     font-family: 'Lora', serif; 
@@ -38,3 +49,17 @@ html,
      width: 80%;
      height: 50%;
  }
+ section {
+    transition: all 0.3s;
+ }
+ section:hover {
+    transform: scale(1.5);
+ }
+ @keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 250px);
+    }
+}
