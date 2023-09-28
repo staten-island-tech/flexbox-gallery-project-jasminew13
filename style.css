@@ -5,25 +5,30 @@ html,
     margin: 20;
     padding: 0;
 }
-.h1{
+.header{
     font-size: 100px;
     text-align: center;
     font-family: 'Croissant One', cursive;
     font-family: 'Lora', serif; 
-    background-color: #BC8DA0;
     top: 20px;
     left: 0;
-    animation: slide 3s linear infinite alternate;
+    animation: slide 10s linear infinite alternate;
 }
-
-  .container{
+.container2{
+    transform: transform .3s ease-in-out;
+    transition: 2s;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    position: relative;
+}
+.container{
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-around;
     font-size: 20px;
 }
-
 .card{
     height: 500px;
     width: 500px;
@@ -50,3 +55,11 @@ html,
  section:hover {
     transform: scale(1.5);
  }
+ @keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 250px);
+    }
+}
