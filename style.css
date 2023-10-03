@@ -217,18 +217,18 @@ html,
     animation-iteration-count: 1;
   }
    @media screen and (max-width: 1000px) {
-    .menu-item{
+    .card{
       width: 40%; 
     }
   }
     @media screen and (max-width: 815px) {
-      .menu-item {
+      .card {
         width: 50%; 
       }
 
    }
  @media screen and (max-width: 418px) {
-      .menu-item {
+      .card {
         width: 100%; 
       }
       
